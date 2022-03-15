@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Index</title>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+	</head>
+	<body>
+        <p id="countingToTen"></p>
+        <button onclick="countToTen()">Click here to execute the loop!</button>
+	
+        <p id="length"></p>
+        <button onclick="stringLength()">Click here to see the length of "Hello World!"</button>
+    
+        <p id="listOfInstruments"></p>
+        <button onclick="forLoop()">Click Here 1!</button>
+
+        <p id="array"></p>
+        <button onclick="arrayFunction()">Click Here 2!</button>
+
+        <p id="constant"></p>
+        <button onclick="constantFunction()">Click Here 3!</button>
+
+        <p id="return"></p>
+        <script>
+            document.getElementById("return").innerHTML= returnFunction("Josh");
+            function returnFunction(name) {
+                return "Hello " + name;
+            }
+        </script>
+
+        <p id="carObject"></p>
+        <button onclick="objectFunction()">Click Here 4!</button>
+    </body>
+</html>
