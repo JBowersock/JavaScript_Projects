@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Index</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+    <script>
+    $(document).ready(function() {
+        $("html").append(
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3 [Click here to hide top font!]</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("p").fadeOut(800); //fade-out effect all paragraph text.
+        $("p").fadeIn(300); //fade-in effect all paragraph text.
+
+        $("#2").css({"color":"red"});
+        $("#3").click(function() { //'.click' event.
+            $('h1').hide();
+        });
+    });
+    </script>
+</html>
